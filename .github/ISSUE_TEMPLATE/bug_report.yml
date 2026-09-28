@@ -1,0 +1,48 @@
+name: Beta problem report
+description: Tell us what went wrong when using Relay.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please remove personal information from screenshots, logs and exported profiles. You do not need to share a diagnosis.
+  - type: input
+    id: version
+    attributes:
+      label: Relay version
+      placeholder: 1.4.0-beta.6
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version
+      placeholder: Windows 11 24H2
+    validations:
+      required: true
+  - type: input
+    id: controller
+    attributes:
+      label: Controller and connection
+      placeholder: Xbox Wireless Controller over USB
+  - type: textarea
+    id: steps
+    attributes:
+      label: What were you trying to do, and what happened?
+      description: Include steps to reproduce the problem and the active profile or mapping if relevant.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: dropdown
+    id: restart
+    attributes:
+      label: Does restarting Relay change the result?
+      options:
+        - Not tried
+        - Yes
+        - No

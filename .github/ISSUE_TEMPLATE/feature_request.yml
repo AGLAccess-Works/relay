@@ -1,0 +1,20 @@
+name: Accessibility feedback or idea
+description: Suggest an improvement to Relay.
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Describe the task or barrier and what would make it easier. You do not need to disclose a diagnosis or other personal medical information.
+  - type: textarea
+    id: situation
+    attributes:
+      label: What is difficult today?
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would help?
+    validations:
+      required: true
